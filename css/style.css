@@ -81,6 +81,13 @@
 
 
 }
+.inscription_center p:nth-child(1){
+    font-size: 60px;
+    color: #FFFFFF;
+    font-family: 'BebasNeueBold';
+    line-height: 70px;
+    letter-spacing: 5.70937px;
+}
 .inscription_center p:nth-child(3){
     margin-top:221px ;
 }
