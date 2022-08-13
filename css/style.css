@@ -6,9 +6,13 @@
 
 }
 
+
 .wrapper{
     min-height: 100%;
     overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
 }
 /*-----------------------HEADER------------------------------------------------------------------------------------------*/
 .header{
@@ -17,6 +21,7 @@
     top:0;
     left: 0;
     z-index: 50;
+
 }
 
 ._container{
@@ -38,10 +43,7 @@
 
     margin-top: 41px;
     margin-left: 419px;
-    /*position: relative;*/
-    /*top:41px;*/
-    /*left:168px;*/
-    /*z-index: 2;*/
+
 }
 
 .page{
@@ -77,19 +79,42 @@
    /* margin-top: 317px;*/
     width: 100%;
     text-align: center;
-    margin-top: 317px;
+    margin-top: 316px;
+    padding-bottom: 21px;
 
 
 }
 .inscription_center p:nth-child(1){
+
+    align-items: flex-end;
     font-size: 60px;
     color: #FFFFFF;
-    font-family: 'BebasNeueBold';
+    /*font-family: 'Nunito', sans-serif;*/
+    /*font-family: 'BebasNeueBold';*/
+    font-family: 'Bebas Neue', bold;
     line-height: 70px;
     letter-spacing: 5.70937px;
 }
+.inscription_center p:nth-child(2){
+    font-family: 'OpenSans';
+    font-size: 16px;
+    line-height: 19px;
+    align-items: flex-end;
+    text-align: center;
+    color: #FFFFFF;
+}
+
 .inscription_center p:nth-child(3){
     margin-top:221px ;
+    padding-bottom:71px ;
+    font-family: 'OpenSans';
+    font-size: 11px;
+    line-height: 13px;
+    align-items: flex-end;
+    text-align: center;
+    letter-spacing: 3.7px;
+
+    color: #FFFFFF;
 }
 
 /*-----------------HEADER----------------------------*/
