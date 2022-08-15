@@ -33,6 +33,8 @@
     width: 100%;
     /*height: 100%;*/
     max-width: 102px;
+    max-height: 23px;
+    /*background-image: url("img/header/logo.svg");*/
     /*max-height: 23px;*/
 }
 
