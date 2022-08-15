@@ -38,17 +38,9 @@
 
 .header_logo{
     width: 100%;
-    /*max-width: 1440px;*/
-    position: relative;
-    /*margin: 0 auto;*/
-    /*margin: 41px 0px 0px 419px;*/
-    /*position: relative;*/
+    margin-top: 41px;
+    margin-left: 45%;
 
-    /*!*position: absolute;*!*/
-    top:41px;
-    left:419px;
-    /*margin-top: 41px;*/
-    /*margin-left: 419px;*/
 }
 
 
