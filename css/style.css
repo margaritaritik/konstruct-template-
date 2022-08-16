@@ -80,8 +80,6 @@ body{
     width: 100%;
     text-align: center;
     margin-top: 316px;
-    /*margin-left: 6px;*/
-    padding-bottom: 21px;
 }
 .inscription_center p:nth-child(1){
     font-size: 60px;
@@ -113,16 +111,11 @@ body{
 
 /*-----------------HEADER----------------------------*/
 /*-----------------MENU--------------------------------------*/
-.page{
-    /*position: relative;*/
-    /*top:768px;*/
-    /*left: 0;*/
-    /*width: 100%;*/
-    /*height: 100%;*/
-    /*max-height: 65px;*/
+.header_menu{
+    width: 100%;
+    height: 100%;
     /*max-width: 1442px;*/
-    /*z-index: 100;*/
-    flex: 1 1 auto;
+    max-height: 65px ;
 
 }
 
@@ -134,7 +127,7 @@ body{
 }
 .menu_list{
     display:flex;
-    padding: 25px 781px 24px 250px;
+    padding: 0px 781px 24px 250px;
 
 }
 
@@ -150,6 +143,13 @@ body{
 
 
 /*-----------------MENU--------------------------------------*/
+
+/*-----------------MAIN-------------------------------*/
+.page{
+    flex: 1 1 auto;
+}
+/*-----------------MAIN-------------------------------*/
+
 /*----------------FOOTER---------------------------*/
 .footer{
     background-color: orange;
