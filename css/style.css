@@ -112,20 +112,21 @@ body{
 /*-----------------HEADER----------------------------*/
 /*-----------------MENU--------------------------------------*/
 .header_menu{
-    position: relative;
-    left:251px;
-    width: 100%;
-    height: 100%;
-    max-height: 65px ;
-    min-width: 940px;
+   width: 100%;
 
+    box-shadow: 0 0 10px 5px rgba(221, 221, 221, 1);
 }
 
 .menu_logo{
 
-
 }
 .menu{
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    max-height: 65px ;
+    max-width: 940px;
+    padding: 24px 0px 23px 0px;
 
 }
 .container_menu{
@@ -134,17 +135,18 @@ body{
     /*padding-right: 450px;*/
     display: flex;
 }
-.menu_list{
-    position: relative;
-    right: 10px;
-    display:flex;
-    padding: 0px 781px 24px 250px;
 
+.menu_list{
+    display:flex;
+}
+.top_menu{
+    margin-left: auto;
 }
 
 .menu_item{
-
+    margin-left: auto;
     list-style-type: none;
+    padding-left: 30px;
 
 }
 .menu_item a{
@@ -156,9 +158,29 @@ body{
 /*-----------------MENU--------------------------------------*/
 
 /*-----------------MAIN-------------------------------*/
+
+
 .page{
     position: relative;
     flex: 1 1 auto;
+}
+
+.page_story{
+
+    width: 100%;
+    height: 100%;
+   margin-top: 58px;
+
+}
+
+.story_container{
+
+    max-width:941px ;
+    max-height: 344px;
+    margin: auto;
+}
+.story_title{
+    text-align: center;
 }
 /*-----------------MAIN-------------------------------*/
 
