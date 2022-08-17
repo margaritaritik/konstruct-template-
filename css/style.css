@@ -161,7 +161,7 @@ body{
 
 
 .page{
-    position: relative;
+
     flex: 1 1 auto;
 }
 
@@ -169,19 +169,81 @@ body{
 
     width: 100%;
     height: 100%;
-   margin-top: 58px;
+    margin-top: 58px;
 
 }
 
 .story_container{
-
+    display: flex;
     max-width:941px ;
-    max-height: 344px;
     margin: auto;
 }
+
 .story_title{
+    max-height: 25px;
+    padding-bottom: 10px;
     text-align: center;
+    font-family: 'OpenSans';
+    font-size: 18px;
+    line-height: 21px;
+    color: #48555B;
 }
+.line{
+    width:100% ;
+    max-width: 50px;
+    border: 2px solid #00A4E5;
+}
+.line_position{
+    margin: auto;
+
+}
+
+.biography{
+    margin: 70px 0px 0px 0px;
+}
+
+.images_biography{
+    display: flex;
+    margin: 96px 0px 0px 77px;
+    width: 100%;
+    max-width: 405px
+
+}
+
+
+.images_biography img:not(:last-child){
+    padding-right: 20px;
+}
+
+.main_text{
+    max-width: 400px;
+    max-height: 95px;
+    /*font-family: 'OpenSans';*/
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    line-height: 23px;
+    color: #48555B;
+    padding-bottom: 30px;
+    letter-spacing: 0.1875px;
+    align-items: flex-end;
+}
+
+.text_biography{
+    max-width: 405px;
+    font-family: 'OpenSans';
+    font-size: 13px;
+    line-height: 23px;
+    align-items: center;
+    letter-spacing: 0.1875px;
+
+    color: #48555B;
+
+}
+/*capabilities*/
+
+
+
+
 /*-----------------MAIN-------------------------------*/
 
 /*----------------FOOTER---------------------------*/
