@@ -26,6 +26,7 @@ body{
 
 ._container{
     width: 100%;
+    height: 100vh;
     box-sizing: content-box;
     position: relative;
     max-width: 940px;
@@ -35,21 +36,14 @@ body{
 
 .logo{
     width: 100%;
-    /*height: 100%;*/
     max-width: 102px;
     max-height: 23px;
-    /*background-image: url("img/header/logo.svg");*/
-    /*max-height: 23px;*/
 }
 
 .header_logo{
     width: 100%;
-    margin-top: 41px;
-    margin-left: 45%;
-
+    margin: 0px auto;
 }
-
-
 
 ._ibj{
 
@@ -60,7 +54,7 @@ body{
 ._ibj img{
     position: absolute;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     max-height: 768px;
     top: 0;
     left: 0;
@@ -79,14 +73,14 @@ body{
 .inscription_center {
     width: 100%;
     text-align: center;
-    margin-top: 316px;
+    margin-top: 30vh;
 }
 .inscription_center p:nth-child(1){
     font-size: 60px;
     color: #FFFFFF;
     font-family: 'Bebas Neue', bold;
     line-height: 60px;
-    letter-spacing: 5.70937px;
+    letter-spacing: 6px;
 }
 .inscription_center p:nth-child(2){
     font-family: 'OpenSans';
@@ -98,14 +92,13 @@ body{
 }
 
 .inscription_center p:nth-child(3){
-    margin-top:221px ;
-    padding-bottom:71px ;
+    margin-top:20vh ;
     font-family: 'OpenSans';
     font-size: 11px;
     line-height: 13px;
     align-items: flex-end;
     text-align: center;
-    letter-spacing: 3.7px;
+    letter-spacing: 4px;
     color: #FFFFFF;
 }
 
@@ -113,7 +106,6 @@ body{
 /*-----------------MENU--------------------------------------*/
 .header_menu{
    width: 100%;
-
     box-shadow: 0 0 10px 5px rgba(221, 221, 221, 1);
 }
 
@@ -130,9 +122,6 @@ body{
 
 }
 .container_menu{
-    /*position: relative;*/
-    /*left:251px;*/
-    /*padding-right: 450px;*/
     display: flex;
 }
 
@@ -224,7 +213,7 @@ body{
     line-height: 23px;
     color: #48555B;
     padding-bottom: 30px;
-    letter-spacing: 0.1875px;
+    letter-spacing: 2px;
     align-items: flex-end;
 }
 
@@ -234,7 +223,7 @@ body{
     font-size: 13px;
     line-height: 23px;
     align-items: center;
-    letter-spacing: 0.1875px;
+    letter-spacing: 2px;
 
     color: #48555B;
 
@@ -263,7 +252,7 @@ body{
     font-size: 18px;
     line-height: 21px;
     align-items: flex-end;
-    letter-spacing: 2.30625px;
+    letter-spacing: 3px;
 
     color: #48555B;
 }
@@ -277,7 +266,7 @@ body{
     font-size: 11px;
     line-height: 19px;
     align-items: center;
-    letter-spacing: 0.2px;
+    letter-spacing: 1px;
     color: #48555B;
     margin-left: 154px;
 }
@@ -292,7 +281,7 @@ body{
     font-size: 13px;
     line-height: 15px;
     text-align: center;
-    letter-spacing: 0.5px;
+    letter-spacing: 1px;
     color: #FFFFFF;
 
 }
@@ -482,7 +471,7 @@ body{
     font-size: 11px;
     line-height: 25px;
     align-items: center;
-    letter-spacing: 0.846154px;
+    letter-spacing: 1px;
     color:#FFFFFF;
 }
 
@@ -502,7 +491,7 @@ body{
     font-size: 11px;
     line-height: 16px;
     align-items: center;
-    letter-spacing: 0.846154px;
+    letter-spacing: 1px;
 
     color: #FFFFFF;
 }
@@ -531,7 +520,7 @@ a{
     width: 100%;
     text-align: center;
     align-items: flex-end;
-    letter-spacing: 0.846154px;
+    letter-spacing: 1px;
     padding: 61px 0px 23px 0px;
     color: #FFFFFF;
 }
