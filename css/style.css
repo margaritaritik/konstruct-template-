@@ -196,12 +196,18 @@ body{
 
 .images_biography{
     display: flex;
-    margin: 70px 0px 0px 20px;
+    margin: 70px 0px 0px 0px;
     width: 100%;
+    justify-content: space-around;
+}
+.biography_item {
+    height: 300px;
+    background: #00A4E5;
+    padding: 10px;
 }
 
 
-.images_biography img:not(:last-child){
+.images_biography .biography_item:not(:last-child){
     padding-right: 20px;
 }
 
