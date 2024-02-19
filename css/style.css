@@ -214,14 +214,21 @@ body{
     justify-content: space-around;
 }
 .biography_item {
+    transition: all 2s;
+    width: 100%;
+    text-align: center;
+    max-width: 150px;
     height: 300px;
     background: #00A4E5;
     padding: 10px;
 }
+.biography_item .biography_text{
+    transition: all 2s;
+}
 
 
 .images_biography .biography_item:not(:last-child){
-    padding-right: 20px;
+
 }
 
 .main_text{
@@ -245,6 +252,42 @@ body{
 
     color: #48555B;
 
+}
+.biography_text{
+    transition: all 2s;
+    display: none;
+    position: relative;
+}
+.biography_item:hover .biography_text{
+   background: rgba(0, 60, 255, 0.13);
+   padding: 10px;
+    display: block;
+    transition: all 2s;
+    animation-name: test;
+    animation-duration: 2s;
+
+}
+
+@keyframes test {
+    0%{
+        background: rgba(0, 60, 255, 0.13);
+        transform: scale(0);
+        opacity: 0;
+    }
+    50%{
+        transform: scale(2, 0.5);
+        /*opacity: 0.3;*/
+        filter: blur(10);
+        background: rgba(0, 164, 229, 0.27);
+    }
+    100%{
+        background: rgba(0, 60, 255, 0.13);
+        transform:  scale(1);
+    }
+}
+.biography_item:hover  p{
+    color: #141A20;
+    opacity: 1;
 }
 /*services*/
 .page_services{
@@ -272,7 +315,6 @@ body{
     line-height: 21px;
     align-items: flex-end;
     letter-spacing: 3px;
-
     color: #48555B;
 }
 
@@ -281,7 +323,7 @@ body{
     height: 100%;
     max-width: 405px;
     font-family: 'OpenSans';
-    font-size: 11px;
+    font-size: 14px;
     line-height: 19px;
     align-items: center;
     letter-spacing: 1px;
@@ -327,7 +369,7 @@ body{
 .service{
     width: 100%;
     height: 100%;
-    max-width: 295px;
+    max-width: 285px;
     box-shadow: 0 0 10px 5px rgba(221, 221, 221, 1);
     padding: 20px;
 }
@@ -343,7 +385,7 @@ body{
 
 .description_project{
     font-family: 'OpenSans';
-    font-size: 13px;
+
     line-height: 23px;
     align-items: center;
     letter-spacing: 0.1875px;
@@ -439,7 +481,6 @@ body{
 .footer{
     width: 100%;
     height: 100%;
-    max-height: 299px;
     background: #141A20;
     padding-top: 42px;
 
@@ -462,7 +503,6 @@ body{
 .title_company{
     padding-bottom: 19px;
     font-family: 'OpenSans';
-    font-size: 11px;
     line-height: 13px;
     align-items: flex-end;
     letter-spacing: 0.846154px;
@@ -473,7 +513,6 @@ body{
     width: 100%;
     max-width: 250px;
     font-family: 'OpenSans';
-    font-size: 11px;
     line-height: 19px;
     align-items: center;
     letter-spacing: 0.85px;
@@ -486,7 +525,6 @@ body{
 
 ._list{
     font-family: 'OpenSans';
-    font-size: 11px;
     line-height: 25px;
     align-items: center;
     letter-spacing: 1px;
@@ -506,13 +544,13 @@ body{
     width: 100%;
     max-width: 128px;
     font-family: 'OpenSans';
-    font-size: 11px;
     line-height: 16px;
     align-items: center;
     letter-spacing: 1px;
 
     color: #FFFFFF;
 }
+
 .contact p:not(:last-child){
     padding-bottom: 15px;
 
@@ -527,12 +565,12 @@ a{
 .socials{
     display: flex;
     width: 100%;
-    max-width: 87px;
+    max-width: 200px;
     margin:30px 0px 0px 46px;
 }
 .socials a{
     width: 0px;
-    height: 100px;
+    height: 200px;
 }
 .copyright{
     width: 100%;
@@ -571,6 +609,12 @@ h2:after{
     margin: 0 auto;
     background: #00A4E5;
     box-shadow: 0px 2px 9px 0px #48555b;
+    transition: all 5s;
+}
+
+h2:hover::after{
+    content: "";
+    width: 200px;
 }
 @media(max-width: 800px){
     .story_container{
@@ -597,10 +641,109 @@ h2:after{
     }
 
     .menu_list a {display: none;}
+    .menu_list{
+        transition: all 0.5s;
+    }
 
     .menu_list .responsive a {
         float: none;
         display: block;
         text-align: left;
     }
+
+    .responsive li a{
+        display: block;
+    }
+    .responsive {
+        transition: all 1s;
+        transform: translate(0px, 40px);
+        margin: 0 auto;
+        width: 100%;
+        display: flex;
+        position: relative;
+        /* top: 20px; */
+        flex-direction: column;
+    }
+
+    .responsive a {
+        margin: 0 auto;
+        width: 100%;
+        display: flex;
+        /* text-align: center; */
+    }
+
+    .top_menu {
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .capabilities {
+        padding-top: 20px;
+        display: flex;
+        margin: 100px 20px 0px 20px;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    .all_services {
+        margin: 25px 0px;
+        display: flex;
+        flex-direction: column;
+    }
+    .all_services_button {
+        width: 100%;
+        height: 100%;
+        /* margin-left: auto; */
+        margin: 10px auto;
+
+    }
+    .capabilities h2{
+        text-align: center;
+    }
+    p{
+        font-size: 14px;
+    }
+    .images_biography{
+        margin: 20px 0px 0px 0px;
+    }
 }
+
+/*///////////load///////*/
+.preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    /* фоновый цвет */
+    background: #e0e0e0;
+    z-index: 1001;
+}
+
+.preloader__image {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    width: 70px;
+    height: 70px;
+    margin-top: -35px;
+    margin-left: -35px;
+    text-align: center;
+    animation: preloader-rotate 2s infinite linear;
+}
+
+@keyframes preloader-rotate {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.loaded_hiding .preloader {
+    transition: 0.3s opacity;
+    opacity: 0;
+}
+
+.loaded .preloader {
+    display: none;
+}
+/*////////////////////////load*/
